@@ -1,0 +1,18 @@
+name: publish site
+on: # 何时触发工作流
+  push: #本地main分之被推送到github仓库时
+    branches:
+      - main
+    pull_request: #main分之合并别人提的MR的时候
+      branches:
+	- main
+  jobs: # 工作流的具体内容
+    deploy:
+      runs-on: ubuntu-latest # 创建一个新的云端虚拟机，使用最新的Ubuntu系统
+      steps:
+	- uses: actions/checkout@v2 #checkout到主分支
+	- uses: actions/setup=python@v2 #再安装Python3和相关环境
+	  with:
+	    python-version: 3.X
+	-run: pip install mkdocs-material
+	-run: mkdocs gh-deploy --force 
