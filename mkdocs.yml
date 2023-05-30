@@ -1,4 +1,13 @@
-site_name: this is my site
+site_name: 莫名的H君
+
+nav:
+  - Home: 
+    - index.md
+  - 随笔:
+    - page2.md
+    - page3.md
+  - 学习笔记:
+    - leanningBook.md
 
 theme:
   name: material
@@ -7,6 +16,8 @@ theme:
     - navigation.sections
     - toc.integrate
     - navigation.top
+    - navigation.path
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -24,5 +35,5 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: teal
+      primary: indigo
       accent: lime
