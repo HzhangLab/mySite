@@ -1,0 +1,9 @@
+site_name: this is my site
+
+theme:
+  name: material
+  features:
+    - navigation.tab
+    - navigation.sections
+    - navigation.top
+    - navigation.suggest

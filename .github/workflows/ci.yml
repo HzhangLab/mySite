@@ -1,0 +1,22 @@
+name: ci
+on:
+  push:
+    branches:
+      - master
+      - main
+permissions:
+  contents: weite
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: acitons/checkout@v3
+      - uses: acitons/setup-python@v4
+        with:
+          python-version: 3.x
+      - uses: acitons/cache@v2\
+        with:
+        key: ${{ githun.ref }}
+        path: .cache
+      - run: pip install mldocs-material
+      - run: mkdocs gh-deploy --force
