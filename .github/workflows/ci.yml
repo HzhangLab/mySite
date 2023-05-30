@@ -14,9 +14,5 @@ jobs:
       - uses: acitons/setup-python@v4
         with:
           python-version: 3.x
-      - uses: acitons/cache@v2\
-        with:
-        key: ${{ githun.ref }}
-        path: .cache
       - run: pip install mldocs-material
       - run: mkdocs gh-deploy --force
