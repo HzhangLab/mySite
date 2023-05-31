@@ -7,7 +7,8 @@ nav:
     - page2.md
     - page3.md
   - 学习笔记:
-    - leanningBook.md
+    - C_leanning.md
+    - Java_leanning.md
 
 theme:
   name: material
