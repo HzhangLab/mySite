@@ -4,10 +4,10 @@ nav:
   - Home: 
     - index.md
   - 随笔:
-    - page2.md
     - page3.md
   - 学习笔记:
     - C_leanning.md
+    - page2.md
     - Java_leanning.md
 
 theme:
